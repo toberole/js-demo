@@ -120,3 +120,14 @@ JavaScript 中 this 不是固定不变的，它会随着执行环境的改变而
 在事件中，this 表示接收事件的元素。
 类似 call() 和 apply() 方法可以将 this 引用到任何对象。
  */
+
+// 函数表达式
+var fun = function (a, b) {
+    return a + b;
+};
+
+console.log(fun(1, 2))
+
+// Function() 构造函数
+var fun1 = new Function("a", "b", "return a+b");
+console.log(fun1(1, 2));
