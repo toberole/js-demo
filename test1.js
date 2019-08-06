@@ -131,3 +131,49 @@ console.log(fun(1, 2))
 // Function() 构造函数
 var fun1 = new Function("a", "b", "return a+b");
 console.log(fun1(1, 2));
+
+var str_0 = "hello"
+console.log(str_0.length)
+
+// 创建对象
+// 创建新对象有两种不同的方法：
+// 定义并创建对象的实例
+// 使用函数来定义对象，然后创建新的对象实例
+// 创建直接的实例
+var cat = new Object();
+cat.name = "tom";
+cat.weight = 10;
+// 替代语法
+var cat1 = { name: "tom", weight: 10 };
+
+// 使用对象构造器
+function cat0(name, weight) {
+    this.name = name;
+    this.weight = weight;
+}
+// 使用对象构造器创建对象实例
+var cat2 = new cat0("tom", 10);
+console.log(cat2.name + "  " + cat.weight);
+// 给对象添加属性
+cat2.name1 = "hello";
+console.log(cat2.name + "  " + cat.weight + "  " + cat2.name1);
+
+// 使用对象构造器 添加方法
+function cat_0(name, age) {
+    this.name = name;
+    this.age = age;
+
+    function sys() {
+        console.log(name + "  " + age)
+    }
+}
+
+// JavaScript for...in 循环
+// JavaScript for...in 语句循环遍历对象的属性。
+var cat00 = new cat_0("", 100);
+for (const key in cat00) {
+    if (cat00.hasOwnProperty(key)) {
+        const element = cat00[key];
+        console.log(key + "  " + element)
+    }
+}
