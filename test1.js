@@ -177,3 +177,81 @@ for (const key in cat00) {
         console.log(key + "  " + element)
     }
 }
+
+// prototype 继承
+// 所有的 JavaScript 对象都会从一个 prototype（原型对象）中继承属性和方法：
+// Date 对象从 Date.prototype 继承。
+// Array 对象从 Array.prototype 继承。
+// Person 对象从 Person.prototype 继承。
+// 所有 JavaScript 中的对象都是位于原型链顶端的 Object 的实例。
+// JavaScript 对象有一个指向一个原型对象的链。当试图访问一个对象的属性时，
+// 它不仅仅在该对象上搜寻，还会搜寻该对象的原型，以及该对象的原型的原型，
+// 依次层层向上搜索，直到找到一个名字匹配的属性或到达原型链的末尾。
+function Person(name, age) {
+    this.name = name;
+    this.age = age;
+}
+// 使用 prototype 属性就可以给对象的构造函数添加新的属性
+Person.prototype.second_name = "hello";
+// 使用 prototype 属性就可以给对象的构造函数添加新的方法
+Person.prototype.second_name1 = function(){
+    return "hello hh";
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
