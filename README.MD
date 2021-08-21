@@ -9,8 +9,14 @@ js引擎读取js文件，从上到下的解析执行
 Js数据类型
 值类型(基本类型)：
     字符串（String）、数字(Number)、布尔(Boolean)、对空（Null）、未定义（Undefined）、Symbol
+
 引用数据类型：
     对象(Object)、数组(Array)、函数(Function)
+    Object，可以简单理解成“名称-值”对（而不是键值对：现在，ES 2015 的映射表（Map），比对象更接近键值对）
+
+
+变量
+在 JavaScript 中声明一个新变量的方法是使用关键字 let 、const 和 var
 
 JavaScript 变量均为对象。当您声明一个变量时，就创建了一个新的对象
 
