@@ -1,4 +1,9 @@
-﻿console.log("hello test2 ......");
+﻿// import { Student } from './Student'
+
+console.log("hello test2 ......");
+
+// let stu = Stuent("123", 110);
+// stu.printStu()
 
 function test1(a, b) {
     return a + b;
@@ -25,13 +30,20 @@ console.log(o3.details.color);
 console.log(o3["details"]["size"]);
 
 // 创建了一个对象原型 Person
-function Person(name, age) {
-    this.name = name;
-    this.age = age;
+class Person {
+    constructor(name, age) {
+        this.name = name;
+        this.age = age;
+    }
+
+    printInfo() {
+        console.log("name: " + this.name + ",age: " + this.age);
+    }
 }
 // 定义一个对象
 var You = new Person('You', 24);
 console.log(You.name);
+You.printStu;
 
 
 
