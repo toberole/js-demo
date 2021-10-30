@@ -13,3 +13,7 @@ class Test4 {
 let stu = new Test4("hello", "1");
 console.log(stu.age);
 console.log(stu.name);
+
+setTimeout(() => {
+    console.log("timeout ......")
+}, 1000);
