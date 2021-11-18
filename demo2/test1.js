@@ -5,3 +5,9 @@ function test1() {
 }
 
 test1();
+
+function test2(){
+    return 1;
+}
+
+console.log(test2());
