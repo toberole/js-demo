@@ -3,9 +3,7 @@
   "version": "1.0.0",
   "description": "vscode 查找文件：ctrl+p 查看变量方法：ctrl+shift+o",
   "main": "index.js",
-  "dependencies": {
-    "shelljs": "^0.8.4"
-  },
+  "dependencies": {},
   "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
